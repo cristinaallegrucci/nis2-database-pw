@@ -138,4 +138,3 @@ CREATE INDEX idx_ps_servizio ON Processo_Servizio(id_servizio);
 
 CREATE INDEX idx_fr_formazione ON Formazione_Responsabile(id_formazione);
 CREATE INDEX idx_fr_responsabile ON Formazione_Responsabile(id_responsabile);
-
