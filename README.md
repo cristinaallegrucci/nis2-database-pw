@@ -17,3 +17,4 @@ Pw basato sulla creazione di una base dati relazionale in ambito NIS2
 ## Obiettivo
 
 Supportare la raccolta e gestione delle informazioni necessarie per la conformità alla normativa NIS2.
+Per istruzioni sull’utilizzo del database, consultare il file presente nella cartella docs.
