@@ -1,0 +1,39 @@
+ISTRUZIONI ESECUZIONE DATABASE (PostgreSQL)
+
+1. TOOL CONSIGLIATO
+- pgAdmin oppure psql (terminale)
+
+2. CREAZIONE DATABASE
+- Creare un nuovo database (es.: tesi_nis2)
+
+3. ORDINE DI ESECUZIONE FILE
+Eseguire i file nell’ordine seguente:
+
+1) 01_schema.sql
+   → crea tutte le tabelle e relazioni
+
+2) 02_versioning_triggers.sql
+   → crea tabella Audit_Log e trigger su Servizio
+
+3) 03_seed_data.sql
+   → inserisce dati di esempio
+
+4) 05_views_functions_acn.sql
+   → crea la vista v_export_acn
+
+5) 04_queries_acn.sql
+   → esegue query di interrogazione
+
+6) 06_tests.sql
+   → esegue test di verifica
+
+4. NOTE IMPORTANTI
+- Alcuni test sono progettati per FALLIRE (vincoli FK e CHECK)
+- In caso di errore, eseguire i test singolarmente
+- Verificare che tutti i file siano salvati con codifica UTF-8
+
+5. OUTPUT ATTESO
+- Tabelle create correttamente
+- Dati popolati
+- Vista funzionante
+- Trigger attivo (Audit_Log popolato dopo UPDATE)
