@@ -35,7 +35,7 @@ JOIN Servizio_Fornitore sf ON s.id_servizio = sf.id_servizio
 JOIN Fornitore f ON sf.id_fornitore = f.id_fornitore
 ORDER BY s.nome;
 
--- Q4: Responsabili associati ai servizi
+-- Q4: Punti di contatto (Responsabili associati ai servizi)
 SELECT
     s.nome AS servizio,
     r.ruolo,
